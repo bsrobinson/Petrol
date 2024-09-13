@@ -58,6 +58,7 @@
 		B59A509E2C921D1F00A74E18 /* DefaultsBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsBase.swift; sourceTree = "<group>"; };
 		B59A50A02C921D5E00A74E18 /* FuelDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelDefaults.swift; sourceTree = "<group>"; };
 		B59A50A22C92248300A74E18 /* StationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetail.swift; sourceTree = "<group>"; };
+		B5B094F82C9477C3003123DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +110,7 @@
 		B58E94B22C901D59002592C6 /* Petrol */ = {
 			isa = PBXGroup;
 			children = (
+				B5B094F82C9477C3003123DC /* Info.plist */,
 				B58E94C72C902133002592C6 /* ApplicationStates */,
 				B59A509D2C921D0700A74E18 /* Defaults */,
 				B58E94CE2C902B54002592C6 /* Extensions */,
@@ -434,6 +436,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Petrol/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Enable location services to help find stations near you";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -474,6 +477,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Petrol/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Enable location services to help find stations near you";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;

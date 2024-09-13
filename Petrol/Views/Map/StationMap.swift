@@ -71,6 +71,7 @@ struct StationMap: UIViewRepresentable {
         let view = MKMapView()
         view.delegate = context.coordinator
         view.showsUserLocation = true
+        view.isRotateEnabled = false
         view.setRegion(MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 54, longitude: -2), span: MKCoordinateSpan(latitudeDelta: 6, longitudeDelta: 6)), animated: false)
         return view
     }

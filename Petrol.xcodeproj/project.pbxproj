@@ -7,19 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B520B9992C92553200CCB821 /* FuelSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520B9982C92553200CCB821 /* FuelSelector.swift */; };
+		B540A9992C926368005D0214 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540A9982C926368005D0214 /* ProgressBar.swift */; };
+		B540A99B2C926C94005D0214 /* DistanceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540A99A2C926C94005D0214 /* DistanceLoader.swift */; };
+		B540A99D2C926CF0005D0214 /* LocationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540A99C2C926CEF005D0214 /* LocationState.swift */; };
+		B540A9A02C933084005D0214 /* LocationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540A99F2C933084005D0214 /* LocationButton.swift */; };
+		B540A9A22C933122005D0214 /* MapButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540A9A12C933122005D0214 /* MapButtons.swift */; };
+		B540A9A52C935B49005D0214 /* Brands.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540A9A42C935B49005D0214 /* Brands.swift */; };
+		B540A9A72C93B487005D0214 /* FindCheapest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540A9A62C93B487005D0214 /* FindCheapest.swift */; };
 		B58E94B42C901D59002592C6 /* PetrolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58E94B32C901D59002592C6 /* PetrolApp.swift */; };
 		B58E94B62C901D59002592C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58E94B52C901D59002592C6 /* ContentView.swift */; };
 		B58E94B82C901D5C002592C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58E94B72C901D5C002592C6 /* Assets.xcassets */; };
-		B58E94BC2C901D5C002592C6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58E94BB2C901D5C002592C6 /* Preview Assets.xcassets */; };
+		B58E94C42C901EF8002592C6 /* Feeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58E94C32C901EF8002592C6 /* Feeds.swift */; };
+		B58E94C62C901F08002592C6 /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58E94C52C901F08002592C6 /* FeedModel.swift */; };
+		B58E94CA2C902150002592C6 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58E94C92C902150002592C6 /* AppState.swift */; };
+		B58E94CD2C9021D1002592C6 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58E94CC2C9021D1002592C6 /* FeedLoader.swift */; };
+		B58E94D02C902B5F002592C6 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58E94CF2C902B5F002592C6 /* StringExtensions.swift */; };
+		B58E94D22C902BC2002592C6 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58E94D12C902BC2002592C6 /* Station.swift */; };
+		B59A508D2C90FF7A00A74E18 /* StationMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59A508C2C90FF7A00A74E18 /* StationMap.swift */; };
+		B59A50952C92114E00A74E18 /* StationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59A50942C92114D00A74E18 /* StationAnnotation.swift */; };
+		B59A50972C92117D00A74E18 /* ClusterAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59A50962C92117D00A74E18 /* ClusterAnnotation.swift */; };
+		B59A509F2C921D1F00A74E18 /* DefaultsBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59A509E2C921D1F00A74E18 /* DefaultsBase.swift */; };
+		B59A50A12C921D5E00A74E18 /* FuelDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59A50A02C921D5E00A74E18 /* FuelDefaults.swift */; };
+		B59A50A32C92248400A74E18 /* StationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59A50A22C92248300A74E18 /* StationDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B520B9982C92553200CCB821 /* FuelSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelSelector.swift; sourceTree = "<group>"; };
+		B540A9982C926368005D0214 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		B540A99A2C926C94005D0214 /* DistanceLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceLoader.swift; sourceTree = "<group>"; };
+		B540A99C2C926CEF005D0214 /* LocationState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationState.swift; sourceTree = "<group>"; };
+		B540A99F2C933084005D0214 /* LocationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationButton.swift; sourceTree = "<group>"; };
+		B540A9A12C933122005D0214 /* MapButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapButtons.swift; sourceTree = "<group>"; };
+		B540A9A42C935B49005D0214 /* Brands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brands.swift; sourceTree = "<group>"; };
+		B540A9A62C93B487005D0214 /* FindCheapest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCheapest.swift; sourceTree = "<group>"; };
 		B58E94B02C901D59002592C6 /* Petrol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Petrol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58E94B32C901D59002592C6 /* PetrolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetrolApp.swift; sourceTree = "<group>"; };
 		B58E94B52C901D59002592C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B58E94B72C901D5C002592C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B58E94B92C901D5C002592C6 /* Petrol.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Petrol.entitlements; sourceTree = "<group>"; };
-		B58E94BB2C901D5C002592C6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B58E94C32C901EF8002592C6 /* Feeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feeds.swift; sourceTree = "<group>"; };
+		B58E94C52C901F08002592C6 /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
+		B58E94C92C902150002592C6 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		B58E94CC2C9021D1002592C6 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
+		B58E94CF2C902B5F002592C6 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		B58E94D12C902BC2002592C6 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		B59A508C2C90FF7A00A74E18 /* StationMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationMap.swift; sourceTree = "<group>"; };
+		B59A50942C92114D00A74E18 /* StationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationAnnotation.swift; sourceTree = "<group>"; };
+		B59A50962C92117D00A74E18 /* ClusterAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterAnnotation.swift; sourceTree = "<group>"; };
+		B59A509E2C921D1F00A74E18 /* DefaultsBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsBase.swift; sourceTree = "<group>"; };
+		B59A50A02C921D5E00A74E18 /* FuelDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelDefaults.swift; sourceTree = "<group>"; };
+		B59A50A22C92248300A74E18 /* StationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +71,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B540A99E2C933075005D0214 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				B540A9A32C933128005D0214 /* MapButtons */,
+				B540A9A12C933122005D0214 /* MapButtons.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		B540A9A32C933128005D0214 /* MapButtons */ = {
+			isa = PBXGroup;
+			children = (
+				B520B9982C92553200CCB821 /* FuelSelector.swift */,
+				B540A99F2C933084005D0214 /* LocationButton.swift */,
+				B540A9A62C93B487005D0214 /* FindCheapest.swift */,
+			);
+			path = MapButtons;
+			sourceTree = "<group>";
+		};
 		B58E94A72C901D59002592C6 = {
 			isa = PBXGroup;
 			children = (
@@ -52,21 +109,101 @@
 		B58E94B22C901D59002592C6 /* Petrol */ = {
 			isa = PBXGroup;
 			children = (
-				B58E94B32C901D59002592C6 /* PetrolApp.swift */,
-				B58E94B52C901D59002592C6 /* ContentView.swift */,
-				B58E94B72C901D5C002592C6 /* Assets.xcassets */,
+				B58E94C72C902133002592C6 /* ApplicationStates */,
+				B59A509D2C921D0700A74E18 /* Defaults */,
+				B58E94CE2C902B54002592C6 /* Extensions */,
+				B58E94CB2C9021BF002592C6 /* Helpers */,
+				B58E94C22C901EE4002592C6 /* Models */,
+				B59A508E2C91FB2300A74E18 /* Views */,
 				B58E94B92C901D5C002592C6 /* Petrol.entitlements */,
-				B58E94BA2C901D5C002592C6 /* Preview Content */,
+				B58E94B52C901D59002592C6 /* ContentView.swift */,
+				B58E94B32C901D59002592C6 /* PetrolApp.swift */,
+				B58E94B72C901D5C002592C6 /* Assets.xcassets */,
 			);
 			path = Petrol;
 			sourceTree = "<group>";
 		};
-		B58E94BA2C901D5C002592C6 /* Preview Content */ = {
+		B58E94C22C901EE4002592C6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B58E94BB2C901D5C002592C6 /* Preview Assets.xcassets */,
+				B58E94C32C901EF8002592C6 /* Feeds.swift */,
+				B58E94C52C901F08002592C6 /* FeedModel.swift */,
+				B58E94D12C902BC2002592C6 /* Station.swift */,
+				B540A9A42C935B49005D0214 /* Brands.swift */,
 			);
-			path = "Preview Content";
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B58E94C72C902133002592C6 /* ApplicationStates */ = {
+			isa = PBXGroup;
+			children = (
+				B58E94C92C902150002592C6 /* AppState.swift */,
+				B540A99C2C926CEF005D0214 /* LocationState.swift */,
+			);
+			path = ApplicationStates;
+			sourceTree = "<group>";
+		};
+		B58E94CB2C9021BF002592C6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B58E94CC2C9021D1002592C6 /* FeedLoader.swift */,
+				B540A99A2C926C94005D0214 /* DistanceLoader.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B58E94CE2C902B54002592C6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B58E94CF2C902B5F002592C6 /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B59A508E2C91FB2300A74E18 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B540A99E2C933075005D0214 /* Buttons */,
+				B59A50922C92112A00A74E18 /* Map */,
+				B59A508F2C91FB2900A74E18 /* Overlays */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B59A508F2C91FB2900A74E18 /* Overlays */ = {
+			isa = PBXGroup;
+			children = (
+				B540A9982C926368005D0214 /* ProgressBar.swift */,
+				B59A50A22C92248300A74E18 /* StationDetail.swift */,
+			);
+			path = Overlays;
+			sourceTree = "<group>";
+		};
+		B59A50922C92112A00A74E18 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				B59A50932C92113B00A74E18 /* Annotations */,
+				B59A508C2C90FF7A00A74E18 /* StationMap.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		B59A50932C92113B00A74E18 /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				B59A50962C92117D00A74E18 /* ClusterAnnotation.swift */,
+				B59A50942C92114D00A74E18 /* StationAnnotation.swift */,
+			);
+			path = Annotations;
+			sourceTree = "<group>";
+		};
+		B59A509D2C921D0700A74E18 /* Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				B59A509E2C921D1F00A74E18 /* DefaultsBase.swift */,
+				B59A50A02C921D5E00A74E18 /* FuelDefaults.swift */,
+			);
+			path = Defaults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +222,8 @@
 			dependencies = (
 			);
 			name = Petrol;
+			packageProductDependencies = (
+			);
 			productName = Petrol;
 			productReference = B58E94B02C901D59002592C6 /* Petrol.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +252,8 @@
 				Base,
 			);
 			mainGroup = B58E94A72C901D59002592C6;
+			packageReferences = (
+			);
 			productRefGroup = B58E94B12C901D59002592C6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +268,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B58E94BC2C901D5C002592C6 /* Preview Assets.xcassets in Resources */,
 				B58E94B82C901D5C002592C6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +279,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B540A9A02C933084005D0214 /* LocationButton.swift in Sources */,
+				B540A9A72C93B487005D0214 /* FindCheapest.swift in Sources */,
+				B540A9992C926368005D0214 /* ProgressBar.swift in Sources */,
+				B59A50952C92114E00A74E18 /* StationAnnotation.swift in Sources */,
+				B59A509F2C921D1F00A74E18 /* DefaultsBase.swift in Sources */,
+				B59A50A12C921D5E00A74E18 /* FuelDefaults.swift in Sources */,
+				B58E94D02C902B5F002592C6 /* StringExtensions.swift in Sources */,
+				B58E94D22C902BC2002592C6 /* Station.swift in Sources */,
 				B58E94B62C901D59002592C6 /* ContentView.swift in Sources */,
+				B59A50A32C92248400A74E18 /* StationDetail.swift in Sources */,
+				B540A99B2C926C94005D0214 /* DistanceLoader.swift in Sources */,
+				B540A9A22C933122005D0214 /* MapButtons.swift in Sources */,
+				B58E94CA2C902150002592C6 /* AppState.swift in Sources */,
+				B58E94C62C901F08002592C6 /* FeedModel.swift in Sources */,
+				B520B9992C92553200CCB821 /* FuelSelector.swift in Sources */,
+				B540A9A52C935B49005D0214 /* Brands.swift in Sources */,
+				B540A99D2C926CF0005D0214 /* LocationState.swift in Sources */,
+				B59A50972C92117D00A74E18 /* ClusterAnnotation.swift in Sources */,
 				B58E94B42C901D59002592C6 /* PetrolApp.swift in Sources */,
+				B58E94C42C901EF8002592C6 /* Feeds.swift in Sources */,
+				B59A508D2C90FF7A00A74E18 /* StationMap.swift in Sources */,
+				B58E94CD2C9021D1002592C6 /* FeedLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,11 +429,12 @@
 				CODE_SIGN_ENTITLEMENTS = Petrol/Petrol.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Petrol/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 8655ZD6J3H;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Enable location services to help find stations near you";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -284,15 +445,16 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ben-robinson.Petrol";
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ben-robinson.petrol";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,11 +469,12 @@
 				CODE_SIGN_ENTITLEMENTS = Petrol/Petrol.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Petrol/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 8655ZD6J3H;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Enable location services to help find stations near you";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -322,15 +485,16 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ben-robinson.Petrol";
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ben-robinson.petrol";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

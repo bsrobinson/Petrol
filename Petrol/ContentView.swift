@@ -5,17 +5,58 @@
 //  Created by Ben Robinson on 10/09/2024.
 //
 
+//unable to move between pins
+//progress in dark mode
+
 import SwiftUI
+import MapKit
 
 struct ContentView: View {
+    
+    @ObservedObject private var appState = AppState.shared
+    @ObservedObject private var locationState = LocationState.shared
+    @ObservedObject private var fuel = Defaults.fuel
+    
+    @State private var cheapestStationOnMap: StationAnnotation?
+    
+    @State private var moveToUserLocation = false
+    @State private var movedToLoadedLocation = false
+
+    @State private var openCheapest = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+        ZStack() {
+                
+            StationMap(
+                stations: $appState.stations,
+                fuelType: $fuel.type,
+                selectedStations: $appState.selectedStations,
+                cheapestStationOnMap: $cheapestStationOnMap,
+                moveToUserLocation: $moveToUserLocation,
+                openCheapest: $openCheapest
+            )
+            .edgesIgnoringSafeArea(.all)
+                
+            MapButtons(moveToUserLocation: $moveToUserLocation, openCheapest: $openCheapest)
+            
+            ProgressBar()
+            
         }
-        .padding()
+        .sheet(isPresented: $appState.showStationSheet) {
+            StationDetail()
+                .presentationDetents([.height(200), .height(201)])
+                .presentationDragIndicator(.visible)
+                .presentationBackgroundInteraction(.enabled)
+        }
+        .onReceive(locationState.$myLocation) { location in
+            if !movedToLoadedLocation {
+                moveToUserLocation = true
+            }
+            if location != nil {
+                movedToLoadedLocation = true
+            }
+        }
     }
 }
 

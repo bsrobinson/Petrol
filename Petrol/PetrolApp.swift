@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct PetrolApp: App {
+      
     var body: some Scene {
+        
         WindowGroup {
+        
             ContentView()
+            
         }
     }
 }

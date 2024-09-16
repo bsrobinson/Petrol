@@ -12,8 +12,6 @@ struct StationMap: UIViewRepresentable {
     
     @Binding var stations: [Station]
     @Binding var fuelType: String
-    @Binding var selectedStations: [Station]
-    @Binding var cheapestStationOnMap: StationAnnotation?
     
     @Binding var moveToUserLocation: Bool
     @Binding var openCheapest: Bool
@@ -23,6 +21,7 @@ struct StationMap: UIViewRepresentable {
         
         var parent: StationMap
         var previousFuelType: String = ""
+        var stationCount: Int = 0
         
         init(_ parent: StationMap) {
             self.parent = parent
@@ -48,17 +47,43 @@ struct StationMap: UIViewRepresentable {
         }
         
         func mapView(_ mapView: MKMapView, didSelect annotation: any MKAnnotation) {
-            if let stationAnnotation = annotation as? StationAnnotation {
-                AppState.shared.selectedStations = [stationAnnotation.station]
-            }
-            if let cluster = annotation as? MKClusterAnnotation {
-                AppState.shared.selectedStations = cluster.memberStations().sorted(by: { ($0.prices[parent.fuelType] ?? -1) < ($1.prices[parent.fuelType] ?? -1) })
+            Task { @MainActor in
+                if let stationAnnotation = annotation as? StationAnnotation {
+                    AppState.shared.selectedStations = [stationAnnotation.station]
+                }
+                if let cluster = annotation as? MKClusterAnnotation {
+                    AppState.shared.selectedStations = cluster.memberStations().sorted(by: { ($0.prices[parent.fuelType] ?? -1) < ($1.prices[parent.fuelType] ?? -1) })
+                }
             }
         }
         
         func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView) {
             Task { @MainActor in
                 AppState.shared.selectedStations = []
+            }
+        }
+        
+        func mapView(_ mapView: MKMapView, regionWillChangeAnimated animated: Bool) {
+            Task { @MainActor in
+                AppState.shared.visibleStations = []
+            }
+        }
+        
+        func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+            updateVisibleStations(mapView)
+        }
+        
+        func mapViewDidFinishLoadingMap(_ mapView: MKMapView) {
+            Task { @MainActor in
+                AppState.shared.loading = false
+            }
+        }
+        
+        func updateVisibleStations(_ mapView: MKMapView) {
+            Task { @MainActor in
+                AppState.shared.visibleStations = mapView.annotations(in: mapView.visibleMapRect)
+                    .compactMap { $0 as? StationAnnotation }
+                    .map { $0.station }
             }
         }
     }
@@ -78,7 +103,7 @@ struct StationMap: UIViewRepresentable {
     
     func updateUIView(_ view: MKMapView, context: Context) {
         
-        if selectedStations.count == 0 {
+        if AppState.shared.selectedStations.count == 0 {
             for selected in view.selectedAnnotations {
                 view.deselectAnnotation(selected, animated: true)
             }
@@ -95,16 +120,23 @@ struct StationMap: UIViewRepresentable {
         if context.coordinator.previousFuelType != fuelType {
             view.removeAnnotations(view.annotations)
             context.coordinator.previousFuelType = fuelType
+            context.coordinator.stationCount = 0
         }
-        let stationAnnotations = view.annotations.compactMap {
-            if let stationAnnotation = $0 as? StationAnnotation { return stationAnnotation }
-            return nil
-        }
-        for station in stations.filter({ $0.prices.keys.contains(fuelType) }) {
-            if !stationAnnotations.contains(where: { $0.station.id == station.id }) {
-                view.addAnnotation(StationAnnotation(station))
+        
+        if stations.count != context.coordinator.stationCount {
+            let stationAnnotations = view.annotations.compactMap {
+                if let stationAnnotation = $0 as? StationAnnotation { return stationAnnotation }
+                return nil
             }
+            for station in stations.filter({ $0.prices.keys.contains(fuelType) }) {
+                if !stationAnnotations.contains(where: { $0.station.id == station.id }) {
+                    view.addAnnotation(StationAnnotation(station))
+                }
+            }
+            context.coordinator.updateVisibleStations(view)
+            context.coordinator.stationCount = stations.count
         }
+        
     }
     
     private func moveToUserLocation(_ mapView: MKMapView) {

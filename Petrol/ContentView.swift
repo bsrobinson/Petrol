@@ -17,8 +17,6 @@ struct ContentView: View {
     @ObservedObject private var locationState = LocationState.shared
     @ObservedObject private var fuel = Defaults.fuel
     
-    @State private var cheapestStationOnMap: StationAnnotation?
-    
     @State private var moveToUserLocation = false
     @State private var movedToLoadedLocation = false
 
@@ -31,8 +29,6 @@ struct ContentView: View {
             StationMap(
                 stations: $appState.stations,
                 fuelType: $fuel.type,
-                selectedStations: $appState.selectedStations,
-                cheapestStationOnMap: $cheapestStationOnMap,
                 moveToUserLocation: $moveToUserLocation,
                 openCheapest: $openCheapest
             )
@@ -41,6 +37,8 @@ struct ContentView: View {
             MapButtons(moveToUserLocation: $moveToUserLocation, openCheapest: $openCheapest)
             
             ProgressBar()
+            
+            LaunchScreen()
             
         }
         .sheet(isPresented: $appState.showStationSheet) {

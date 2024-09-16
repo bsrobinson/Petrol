@@ -11,11 +11,15 @@ class AppState: NSObject, ObservableObject {
     
     static let shared = AppState()
     
+    @Published var loading = true
+    
     @Published var stations: [Station] = []
     
     @Published var feeds = Feeds()
     
     @Published var selectedStations: [Station] = []
+    @Published var visibleStations: [Station] = []
+    
     var showStationSheet: Bool {
         set {
             selectedStations = newValue ? selectedStations : []

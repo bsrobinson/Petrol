@@ -20,7 +20,11 @@ struct FuelSelector: View {
                 Button {
                     fuel.type = type
                 } label: {
-                    Label(type.fuelTypeLabel(), systemImage: fuel.type == type ? "checkmark" : "")
+                    if fuel.type == type {
+                        Label(type.fuelTypeLabel(), systemImage: "checkmark")
+                    } else {
+                        Text(type.fuelTypeLabel())
+                    }
                 }
             }
         } label: {

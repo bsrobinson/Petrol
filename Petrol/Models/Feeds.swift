@@ -56,7 +56,7 @@ class Feeds {
             Feed(supplier: "Esso Tesco Alliance", urlString: "https://fuelprices.esso.co.uk/latestdata.json"),
             Feed(supplier: "JET Retail UK", urlString: "https://jetlocal.co.uk/fuel_prices_data.json"),
             Feed(supplier: "Karan Retail Ltd", urlString: "https://api2.krlmedia.com/integration/live_price/krl"),
-            Feed(supplier: "Morrisons", urlString: "https://www.morrisons.com/fuel-prices/fuel.json"),
+            //Feed(supplier: "Morrisons", urlString: "https://www.morrisons.com/fuel-prices/fuel.json"), //incomplete and duplicated by motorfuelgroup.com
             Feed(supplier: "Moto", urlString: "https://moto-way.com/fuel-price/fuel_prices.json"),
             Feed(supplier: "Motor Fuel Group", urlString: "https://fuel.motorfuelgroup.com/fuel_prices_data.json"),
             Feed(supplier: "Rontec", urlString: "https://www.rontec-servicestations.co.uk/fuel-prices/data/fuel_prices_data.json"),

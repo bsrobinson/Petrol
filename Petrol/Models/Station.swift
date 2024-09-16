@@ -13,7 +13,7 @@ struct Station: Identifiable, Equatable {
     let feed: Feed
     var updated: Date
     
-    let id: String
+    let id = UUID() //site_id from feed can fail to be unique (i.e. Asda on A45 in Northampton, two sites on either side of the road have the same site_id)
     let name: String
     let address: String
     let coordinate: CLLocationCoordinate2D
@@ -28,12 +28,15 @@ struct Station: Identifiable, Equatable {
         return formatter.localizedString(for: updated, relativeTo: Date())
     }
     
-    init(feed: Feed, station: FeedModel.Station, updated: Date, brands: Brands) {
+    init?(feed: Feed, station: FeedModel.Station, updated: Date, brands: Brands) {
+        
+        if station.location.latitude == 0 && station.location.longitude == 0 {
+            return nil
+        }
         
         self.feed = feed
         self.updated = updated
         
-        self.id = station.site_id// "\(feed.supplier)_\(station.site_id)"
         self.name = station.brand?.trim() ?? "Unknown name"
         self.address = "\(station.address.trim())  \(station.postcode.trim())"
         self.coordinate = CLLocationCoordinate2D(latitude: station.location.latitude, longitude: station.location.longitude)

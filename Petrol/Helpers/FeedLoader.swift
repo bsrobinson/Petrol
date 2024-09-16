@@ -18,7 +18,9 @@ actor FeedLoader {
         if let updatedFeed = await getFeed(feed) {
             if let updatedDate = updatedFeed.last_updated.toDate() {
                 for station in updatedFeed.stations {
-                    stations.append(Station(feed: feed, station: station, updated: updatedDate, brands: brands))
+                    if let station = Station(feed: feed, station: station, updated: updatedDate, brands: brands) {
+                        stations.append(station)
+                    }
                 }
             }
         }

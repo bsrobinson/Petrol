@@ -8,7 +8,10 @@ The app downloads the feeds directly from suppliers as published by the UK Gover
 
 ## Download
 
-Download from the Apple App Store (pending approval)
+Download App from the Apple App Store
+
+<a href="https://apps.apple.com/gb/app/uk-petrol-prices/id6680193610?itscg=30200&itsct=apps_box_badge&mttnsubad=6680193610" style="display: inline-block;"><img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1726358400" alt="Download on the App Store" style="height: 56px; vertical-align: middle; object-fit: contain;" /></a>
+    
 
 ## Issues, Features and Contributes
 
